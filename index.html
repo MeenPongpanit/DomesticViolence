@@ -1,26 +1,57 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <link rel="stylesheet" href="./main.css">
-    <title>Document</title>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <meta http-equiv="X-UA-Compatible" content="ie=edge">
+      <title>DomesticViolence</title>
+      <link rel="stylesheet" href="style.css">
+      <script src="http://code.jquery.com/jquery-3.3.1.js"></script>
+      <link href="https://fonts.googleapis.com/css?family=Poppins:200,300,400,700,900" rel="stylesheet">
 </head>
 <body>
-        <div class="header">
-            <h1>หน้าต่อไป</h1>
-        </div>
-        <div class="content">
-            <h1 id = "game">หัวข้อ</h1>
-        </div>
-        <div class="way">
-            <div class="way1"></div>
-            <div class="way2"></div>
-        </div>
-        <div class="start">
-            <h1 onclick="play()" id = "show"></h1>
-        </div>
-    <script src="./main.js"></script>
+
+      <nav>
+            <span id="brand">
+                  <a href="index.html">DomesticViolence</a>
+            </span>
+
+            <ul id="menu">
+                  <li><a href="#">หน้าหลัก</a></li>
+                  <li><a href="#">เกมส์</a></li>
+                  <li><a href="#">หัวข้อ</a></li>
+            </ul>
+
+            <div id="toggle">
+                  <div class="span" id="one"></div>
+                  <div class="span" id="two"></div>
+                  <div class="span" id="three"></div>
+            </div>
+      </nav>
+
+      <div id="resize">
+            <ul id="menu">
+                  <li><a href="#">หน้าหลัก</a></li>
+                  <li><a href="#">เกมส์</a></li>
+                  <li><a href="#">หัวข้อ</a></li>
+            </ul>
+      </div>
+
+      <div class="content">
+            <h1>Don't use violence.</h1>
+      </div>
+
+      <script>
+
+      $("#toggle").click(function() {
+
+      $(this).toggleClass('on');
+      $("#resize").toggleClass("active");
+
+      });
+
+
+      </script>
+
 </body>
 </html>
