@@ -1,3 +1,7 @@
+/* หัวข้อ */
+@import url('https://fonts.googleapis.com/css?family=Prompt');  
+/* เนื้อหา */
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
 * {
       margin: 0;
       padding: 0;
@@ -6,12 +10,10 @@
 }
 
 body {
-      width: 100%;
-      height: 50vh;
-      background: url(./imgs/violence.jpg) no-repeat 50% 50%;
-      background-size: cover;
-      display: table;
+      height: 100vh;
+      background-image: radial-gradient(rgb(215,33,30), rgb(178,23,29), rgb(0,0,0));
 }
+
 
 .content {
       position: absolute;
@@ -22,7 +24,7 @@ body {
 
 .content h1 {
       color: #fff;
-      font-family: "Poppins";
+      font-family: 'Sarabun', sans-serif;
       font-weight: 200;
       font-size: 40px;
 }
@@ -47,7 +49,7 @@ nav #brand {
 nav #brand a {
       color: #fff;
       transition: all 0.3s ease-out;
-      font-family: "Poppins";
+      font-family: 'Sarabun', sans-serif;
       font-weight: 300;
 }
 
