@@ -1,0 +1,9 @@
+/* หัวข้อ */
+@import url('https://fonts.googleapis.com/css?family=Prompt');  
+/* เนื้อหา */
+@import url('https://fonts.googleapis.com/css?family=Sarabun');
+
+div.pic{
+    background-image: url(./imgs/o-DOMESTIC-VIOLENCE-facebook-1.jpg);
+    
+}
