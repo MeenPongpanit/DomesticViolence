@@ -4,6 +4,12 @@
 @import url('https://fonts.googleapis.com/css?family=Sarabun');
 
 div.pic{
-    background-image: url(./imgs/o-DOMESTIC-VIOLENCE-facebook-1.jpg);
-    
+    display:block;
+    height: 100vh;
+    width: 100vw;
+    background-size: auto;
+    background-image: url(imgs/o-DOMESTIC-VIOLENCE-facebook-1.jpg);
+    background-repeat: no-repeat;
+    background-size: contain;
+
 }
