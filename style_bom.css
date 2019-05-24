@@ -34,7 +34,7 @@ div.bot{
     border: 3px solid white;
     border-radius: 5px;
     margin-top: 40%;
-    margin-left: 85%;
+    margin-left: 83%;
 }
 
 
@@ -83,8 +83,8 @@ div.bot:hover {
 .correct{
     position: absolute;
     text-align: center;
-    font-size: 30px;
-    width: 125px;
+    font-size: 25px;
+    width: 200px;
     color: #FFF;
     visibility: hidden;
     top: 65%;
@@ -92,35 +92,38 @@ div.bot:hover {
 }
 
 .correct:hover{
+    color: blue;
     text-shadow: 0px 0px 40px white;
 }
 
 .incorrect{
     position: absolute;
     text-align: center;
-    font-size: 30px;
-    width: 125px;
+    font-size: 25px;
+    width: 200px;
     color: #FFF;
     visibility: hidden;
     top: 65%;
-    left: 65%;
+    left: 63%;
 }
 
 .incorrect:hover{
+    color: blue;
     text-shadow: 0px 0px 40px white;
 }
 
 .other{
     position: absolute;
     top: 65%;
-    left: 45%;
-    font-size: 30px;
+    left: 47%;
+    font-size: 25px;
     width: 250px;
     color: #FFF;
     visibility: hidden;
 }
 
 .other:hover{
+    color: blue;
     text-shadow: 0px 0px 40px white;
 }
 
@@ -176,7 +179,7 @@ div.bot:hover {
 
 #spoil_5{
     position: absolute;
-    top: 10%;
+    top: 5%;
     left: 25%;
     font-size: 25px;
     width: 850px;
