@@ -15,7 +15,7 @@ div.pic{
     height: auto;
     width: 80vw;
     height: 80vh;
-    position: fixed;
+    position: relative;
     background-image: url(imgs/o-DOMESTIC-VIOLENCE-facebook-1.jpg);
     background-repeat: no-repeat;
     background-size: contain;
@@ -28,15 +28,14 @@ div.pic{
 }
 
 div.bot{
-    display: absolute;
     position: absolute;
     padding: 10px 32px;
     width: 100px;
     height: 50px;
     border: 3px solid white;
     border-radius: 5px;
-    margin-top: 40%;
-    margin-left: 82%;
+    margin-top: 45%;
+    margin-left: 95%;
 }
 
 
@@ -62,7 +61,7 @@ div.bot:hover {
 }
 
 .content{
-    position: absolute;
+    position: relative;
     text-align: center;
     width: 500px;
     color: #FFF;
@@ -73,7 +72,7 @@ div.bot:hover {
 }
 
 .way{
-    position: absolute;
+    position: relative;
     text-align: center;
     font-size: 30px;
     width: 500px;
@@ -86,7 +85,7 @@ div.bot:hover {
     
 }
 .correct{
-    position: absolute;
+    position: relative;
     text-align: center;
     font-size: 20px;
     width: 200px;
@@ -103,7 +102,7 @@ div.bot:hover {
 }
 
 .incorrect{
-    position: absolute;
+    position: relative;
     text-align: center;
     font-size: 20px;
     width: 200px;
@@ -120,7 +119,7 @@ div.bot:hover {
 }
 
 .other{
-    position: absolute;
+    position: relative;
     top: 65%;
     left: 47%;
     font-size: 20px;
@@ -134,9 +133,9 @@ div.bot:hover {
     color: blue;
     text-shadow: 0px 0px 40px white;
 }
-
+/*
 #spoil{
-    position: absolute;
+    position: relative;
     top: 20%;
     left: 25%;
     font-size: 20px;
@@ -147,8 +146,8 @@ div.bot:hover {
 }
 
 #spoil_1{
-    position: absolute;
-    top: 20%;
+    position: relative;
+    top: -20%;
     left: 25%;
     font-size: 20px;
     width: 850px;
@@ -158,10 +157,10 @@ div.bot:hover {
 }
 
 #spoil_2{
-    position: absolute;
-    top: 30%;
-    left: 25%;
-    font-size: 30px;
+    position: relative;
+    top: -55%;
+    left: 36%;
+    font-size: 20px;
     width: 850px;
     color: #FFF;
     visibility: hidden;
@@ -169,9 +168,9 @@ div.bot:hover {
 }
 
 #spoil_3{
-    position: absolute;
-    top: 20%;
-    left: 25%;
+    position: relative;
+    top: -70%;
+    left: 36%;
     font-size: 20px;
     width: 850px;
     color: #FFF;
@@ -180,9 +179,9 @@ div.bot:hover {
 }
 
 #spoil_4{
-    position: absolute;
-    top: 30%;
-    left: 25%;
+    position: relative;
+    top: -55%;
+    left: 36%;
     font-size: 20px;
     width: 850px;
     color: #FFF;
@@ -191,9 +190,9 @@ div.bot:hover {
 }
 
 #spoil_5{
-    position: absolute;
-    top: 5%;
-    left: 25%;
+    position: relative;
+    top: -55%;
+    left: 36%;
     font-size: 20px;
     width: 850px;
     color: #FFF;
@@ -202,11 +201,23 @@ div.bot:hover {
 }
 
 #spoil_6{
-    position: absolute;
-    top: 30%;
-    left: 25%;
+    position: relative;
+    top: -55%;
+    left: 36%;
     font-size: 20px;
     width: 850px;
+    color: #FFF;
+    visibility: hidden;
+    font-family: 'Sarabun';
+}
+*/
+
+.spoil{
+    position: absolute;
+    width: 50vw;
+    top: 20vh;
+    left: 0vw;
+    font-size: 28px;
     color: #FFF;
     visibility: hidden;
     font-family: 'Sarabun';
