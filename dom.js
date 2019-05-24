@@ -8,13 +8,27 @@ let correct = document.getElementById("correct")
 let incorrect = document.getElementById("incorrect")
 let other = document.getElementById("other")
 let spoil = document.getElementById("spoil")
+let spoil1 = document.getElementById("spoil_1")
 let spoil2 = document.getElementById("spoil_2")
 let spoil3 = document.getElementById("spoil_3")
 let spoil4 = document.getElementById("spoil_4")
+let spoil5 = document.getElementById("spoil_5")
+let spoil6 = document.getElementById("spoil_6")
 
 let des = 0
 let ques = 0
 let description = [
+    "เริ่มทำ Quiz",
+    "เป็นชั่วโมงเร่งด่วน คุณกำลังเร่งรีบเพื่อเดินทางไปคณะเพื่อเข้าเรียนให้ทันเวลา",
+    "ทางข้างหน้าดูวุ่นวาย มีคนจำนวนมากยืนมุงดูราวกับมีเหตุการณ์อะไรเกิดขึ้น",
+    "ฝูงชนที่แออัด ทำให้คุณที่จำเป็นต้องผ่านทางนั้นไม่สามารถจะผ่านจุดเกิดเหตุไปได้โดยเร็วคุณจึงหยุด และ สังเกตเหตุการณ์ที่เกิดขึ้น",
+    "ท่ามกลางสายตาผู้คน สาวใหญ่วัยกลางคนทำลังทุบตีทำร้ายร่างกายแฟนหนุ่มของตน ทั้งยังก่นด่าด้วยข้อความหยาบคาย เกี่ยวกับพฤติกรรมชู้สาวของแฟนหนุ่มคนนั้น",
+    "ในสถานการณ์นี้คุณจะ ..",
+    "เรื่องราวนี้เป็นส่วนหนึ่งในการทดสอบทัศนคติของคุณที่มีต่อ ความรุนแรงในครอบครัวและหลักสิทธิมนุษยชน",
+    "ในปัจจุบันยังมีคนจำนวนมาก มีมุมมองเกี่ยวกับการใช้ความรุนแรงในครอบครัวว่าเป็นเรื่องปกติ มีค่านิยมที่คนกระทำผิดต้องถูกลงโทษอย่างโหดร้ายทารุณมีค่านิยมว่าผู้เป็นลูกต้องกตัญญูและตอบแทนบุญคุณของพ่อแม่ผู้ชุบเลี้ยงมีความคิดว่าเด็กต้องอยู่ภายใต้ความคิดของผู้ใหญ่",
+    "ด้วยความคิดและค่านิยมเหล่านี้ นำไปสู่การละเมิดสิทธิมนุษยชนของคนในครอบครัวตนเอง รวมถึงการใช้ความรุนแรงภายในครอบครัวด้วยไม่ว่าจะเป็นการทำร้ายร่างกาย การบังคับขู่เข็ญ หรือแม้กระทั่งการกักขัง",
+    "เหตุการณ์ต่อไปจะเป็นเหตุการณ์สมมติโดยอ้างอิงมาจากเหตุการณ์ที่เกิดขึ้นจริงในสังคม",
+    "เราหวังว่าคุณจะได้รับความรู้ความเข้าใจเพิ่มเติมเกี่ยวกับหลักสิทธิมนุษยชน และ ความรุนแรงในครอบครัวจากการตอบคำถาม และ อ่านเนื้องเรื่องเหล่านี้..",
     "นางสาว A(นามสมมุติ) เป็นวัยรุ่นอายุ 16 ปี อาศัยอยู่กับตาเเละยาย",
     "ในช่วงปิดเทอมนางสาว A ชอบออกไปเที่ยวกับเพื่อนบ่อยๆบ้างก็ค้างคืน",
     "ตายายของนางสาว A นั้นรู้สึกว่านางสาว A ทำตัวไม่เหมาะสมเป็นสาวเป็นนาง ชอบเที่ยวกลางคืน เลยทำการจับขังติดกับเตียงไว้",
@@ -41,7 +55,6 @@ let description = [
     "นางสาว B ได้ทำการเอา PS4 ของแฟนหนุ่มไปทำลายทิ้งพร้อมทั้งอัดคลิปไว้แล้วส่งให้แฟนหนุ่มดู",
     "พร้อมทั้งส่งข้อความไปด้วยว่า ถ้ายังไม่ใส่ใจตนอีกจะต้องเจอแบบนี้",
     "คุณคิดว่า การทำลายทรัพย์สินของส่วนตัวนั้นเป็นความรุนแรงในครอบครัวหรือไม่เมื่อไม่ได้มีการกระทำกับตัวบุคคลโดยตรง"
-
 ]
 let question = [
     "ตายาย มีความผิดหรือไม่อย่างไร"
@@ -50,51 +63,66 @@ let question = [
 function next(){
     picture.style.display = "none"
     body.style.backgroundImage = "radial-gradient(rgb(215,33,30), rgb(178,23,29), rgb(0,0,0))"
-    if (des > 3){
+    if (des == 15){
         way.style.visibility = "visible"
         way.innerText = question[0]
     }
-    if (des > 25){
-        spoil4.style.visibility = "hidden"
-        way.style.visibility = "hidden"
-        content.style.visibility = "้hidden"
+    
+    if (des == 38) {
+        spoil_5.style.visibility = "hidden"
+        spoil_6.style.visibility = "visible"
         next_page.style.visibility = "hidden"
     }
-    if (des == 25){
-        next_page.style.visibility = "hidden"
+    if (des == 37){
+        spoil4.style.visibility = "hidden"
+        spoil_5.style.visibility = "visible"
+        content.style.visibility = "hidden"
+    }
+    if (des == 36){
         correct.innerText = "เป็น"
         incorrect.innerText = "ไม่เป็น"
+        next_page.style.visibility = "hidden"
         correct.style.visibility = "visible"
         incorrect.style.visibility = "visible"
-        way.style.visibility = "hidden"
     }
-    if (des > 17 && des < 25){
+    if (des > 28 && des < 36){
         spoil3.style.visibility = "hidden"
-        way.style.visibility = "hidden"
         content.style.visibility = "visible"
     }
-    if (des == 17){
+    if (des == 28){
         correct.innerText = "สมควร"
         incorrect.innerText = "ไม่สมควร"
-        other.innerText = "สมควรแต่ไม่ถูกต้อง"
+        other.innerText = "สมควรเเต่ไม่ถูกต้อง"
+        next_page.style.visibility = "hidden"
         correct.style.visibility = "visible"
         incorrect.style.visibility = "visible"
         other.style.visibility = "visible"
+    }
+    if (des > 22 && des < 28){
+        content.style.visibility = "visible"
+        spoil2.style.visibility = "hidden"
+    }
+    if (des == 22){
         next_page.style.visibility = "hidden"
+        correct.style.visibility = "visible"
+        incorrect.style.visibility = "visible"
         way.style.visibility = "hidden"
     }
-    if (des > 11 && des < 17){
-        spoil2.style.visibility = "hidden"
+    if (des > 16 && des < 22){
+        spoil.style.visibility = "hidden"
         way.style.visibility = "hidden"
         content.style.visibility = "visible"
     }
-    if (des == 11){
+    if (des == 16){
+        correct.innerText = "ผิด"
+        incorrect.innerText = "ไม่ผิด"
         correct.style.visibility = "visible"
         incorrect.style.visibility = "visible"
         next_page.style.visibility = "hidden"
         way.style.visibility = "hidden"
     }
     if (des > 5 && des < 11){
+        spoil1.style.visibility = "hidden"
         correct.style.visibility = "hidden"
         incorrect.style.visibility = "hidden"
         spoil.style.visibility = "hidden"
@@ -102,11 +130,12 @@ function next(){
         content.style.visibility = "visible"
     }
     if (ques == 5){
+        correct.innerText = "รีบเดินฝ่าฝูงชนเพื่อไปเรียนให้ทันเวลา"
+        incorrect.innerText = "เข้าไปห้ามปรามชายหญิงคู่นั้น"
         next_page.style.visibility = "hidden"
         way.style.visibility = "hidden"
         correct.style.visibility = "visible"
         incorrect.style.visibility = "visible"
-        other.style.visibility = "hidden"
     }
     content.innerText = description[des]
     ques += 1
@@ -116,15 +145,18 @@ function next(){
 
 function show_spoil(){
     if(des == 6){
+        spoil1.style.visibility = "visible"
+    }
+    if(des == 17){
         spoil.style.visibility = "visible"
     }
-    if(des == 12){
+    if(des == 23){
         spoil2.style.visibility = "visible"
     }
-    if(des == 18){
+    if(des == 29){
         spoil3.style.visibility = "visible"
     }
-    if(des == 26){
+    if(des == 37){
         spoil4.style.visibility = "visible"
     }
     content.style.visibility = "hidden"

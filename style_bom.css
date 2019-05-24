@@ -134,6 +134,16 @@ div.bot:hover {
     visibility: hidden;
 }
 
+#spoil_1{
+    position: absolute;
+    top: 20%;
+    left: 25%;
+    font-size: 30px;
+    width: 850px;
+    color: #FFF;
+    visibility: hidden;
+}
+
 #spoil_2{
     position: absolute;
     top: 30%;
@@ -155,6 +165,26 @@ div.bot:hover {
 }
 
 #spoil_4{
+    position: absolute;
+    top: 30%;
+    left: 25%;
+    font-size: 30px;
+    width: 850px;
+    color: #FFF;
+    visibility: hidden;
+}
+
+#spoil_5{
+    position: absolute;
+    top: 10%;
+    left: 25%;
+    font-size: 25px;
+    width: 850px;
+    color: #FFF;
+    visibility: hidden;
+}
+
+#spoil_6{
     position: absolute;
     top: 30%;
     left: 25%;
