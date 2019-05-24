@@ -5,5 +5,6 @@
 
 div.pic{
     background-image: url(./imgs/o-DOMESTIC-VIOLENCE-facebook-1.jpg);
-    
+    width: 100%;
+    height: 100%;
 }
