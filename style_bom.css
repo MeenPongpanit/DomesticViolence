@@ -2,16 +2,55 @@
 @import url('https://fonts.googleapis.com/css?family=Prompt');  
 /* เนื้อหา */
 @import url('https://fonts.googleapis.com/css?family=Sarabun');
-
+body{
+    background-color: black;
+}
 div.pic{
-
-    display:block;
-    height: 100vh;
-    width: 100vw;
-    background-size: auto;
+    background-color: black;
+    display:flex;
+    height: auto;
+    width: 80vw;
+    height: 80vh;
+    position: fixed;
     background-image: url(imgs/o-DOMESTIC-VIOLENCE-facebook-1.jpg);
     background-repeat: no-repeat;
     background-size: contain;
+    top: 10%;
+    left: 12%;
+    right: 0px;
+    bottom: 0px;
+    z-index: -1;
     /*  */
+}
+
+div.bot{
+    display: flex;
+    padding: 10px 32px;
+    width: 100px;
+    height: 50px;
+    border: 3px solid white;
+    border-radius: 5px;
+    margin-top: 43%;
+    margin-left: 87%;
+}
+
+#text{
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    text-align: center;
+    flex-direction: column;
+    color: white;
+    font-size: 35px;
+}
+
+div.bot:hover p{
+    color: black;
+    
+}
+div.bot:hover {
+    background-color: rgba(255, 255, 255, 0.884);
+    box-shadow: 0px 0px 20px white;
 
 }
+
