@@ -54,3 +54,50 @@ div.bot:hover {
 
 }
 
+.content{
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    width: 500px;
+    color: #FFF;
+}
+.way{
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    width: 500px;
+    color: #FFF;
+    visibility: hidden;
+}
+.correct{
+    position: absolute;
+    top: 50%;
+    right: 40%;
+    width: 500px;
+    color: #FFF;
+    visibility: hidden;
+}
+.incorrect{
+    position: absolute;
+    top: 50%;
+    right: 30%;
+    width: 500px;
+    color: #FFF;
+    visibility: hidden;
+}
+.other{
+    position: absolute;
+    top: 50%;
+    right: 20%;
+    width: 500px;
+    color: #FFF;
+    visibility: hidden;
+}
+.spoil{
+    position: absolute;
+    top: 40%;
+    right: 40%;
+    width: 500px;
+    color: #FFF;
+    visibility: hidden;
+}
