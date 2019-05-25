@@ -5,8 +5,8 @@
 
 body{
     background-color: black;
-    width: 90vw;
-    height: 97.7vh;
+    width: 100vw;
+    height: 100vh;
     position: relative;
 }
 div.pic{
@@ -34,8 +34,8 @@ div.bot{
     height: 50px;
     border: 3px solid white;
     border-radius: 5px;
-    margin-top: 45%;
-    margin-left: 95%;
+    bottom: 5%;
+    right: 5%;
 }
 
 
@@ -230,15 +230,12 @@ div.bot:hover {
     width: 50vw;
     top: 20vh;
     left: 25vw;
-    font-size: 26px;
+    font-size: 20px;
     color: #FFF;
     visibility: hidden;
     font-family: 'Sarabun';
 }
 
-#spoil_5{
-    font-size: 21px;
-}
 #learnmore p{
     display: flex;
     justify-content: center;
