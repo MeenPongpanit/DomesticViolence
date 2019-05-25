@@ -62,7 +62,7 @@ let question = [
 //function
 function next(){
     picture.style.display = "none"
-    body.style.backgroundImage = "radial-gradient(rgb(215,33,30), rgb(178,23,29), rgb(0,0,0))"
+    body.style.backgroundImage = "linear-gradient(to bottom, rgb(215,33,30), rgb(178,23,29), rgb(0,0,0))"
     if (des == 15){
         way.style.visibility = "visible"
         way.innerText = question[0]
