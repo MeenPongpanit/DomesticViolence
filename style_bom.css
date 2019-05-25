@@ -236,6 +236,10 @@ div.bot:hover {
     font-family: 'Sarabun';
 }
 
+#spoil_5{
+    font-size: 17px;
+}
+
 #learnmore p{
     display: flex;
     justify-content: center;
